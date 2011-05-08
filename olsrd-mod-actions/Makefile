@@ -16,12 +16,14 @@ OLSRD_BUILD_DIR=$(BUILD_DIR)/olsrd-$(PKG_VERSION)
 include $(INCLUDE_DIR)/package.mk
 
 define Package/olsrd-mod-actions
+  TITLE:=OLSR (Optimized Link State Routing) daemon
+  TITLE:=A plugin for triggering actions on route changes
   SECTION:=net
   CATEGORY:=Network
+  SUBMENU:=Routing and Redirection
   URL:=http://www.olsr.org/
   MENU:=1
   DEPENDS:=olsrd
-  TITLE:=A plugin for triggering actions on route changes
 endef
 
 define Build/Configure
