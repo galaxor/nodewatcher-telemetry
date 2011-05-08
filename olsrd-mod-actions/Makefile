@@ -52,7 +52,7 @@ endef
 
 define Package/olsrd-mod-actions/install
 	$(INSTALL_DIR) $(1)/usr/lib
-	$(INSTALL_BIN) $(PKG_BUILD_DIR)/lib/actions/olsrd_actions.so.* $(1)/usr/lib/
+	$(INSTALL_BIN) $(OLSRD_BUILD_DIR)/lib/actions/olsrd_actions.so.* $(1)/usr/lib/
 endef
 
 $(eval $(call BuildPackage,olsrd-mod-actions))
