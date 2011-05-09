@@ -23,7 +23,7 @@ endef
 define Build/Compile
 endef
 
-define Package/nodewatcher-core/install
+define Package/nodewatcher/install
 endef
 
 $(eval $(call BuildPackage,nodewatcher))
