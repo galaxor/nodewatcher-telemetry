@@ -10,7 +10,7 @@ define Package/nodeupgrade
   SECTION:=utils
   CATEGORY:=Utilities
   DEPENDS:=+busybox
-  TITLE:=NodeUpgrade
+  TITLE:=Friendly Firmware Upgrade Scripts
 endef
 
 define Build/Prepare

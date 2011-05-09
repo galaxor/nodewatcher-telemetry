@@ -9,6 +9,7 @@ include $(INCLUDE_DIR)/package.mk
 define Package/nodewatcher-watchdog
   SECTION:=utils
   CATEGORY:=Utilities
+  SUBMENU:=Nodewatcher
   DEPENDS:=+nodewatcher-core +cronscripts
   TITLE:=nodewatcher-watchdog
 endef

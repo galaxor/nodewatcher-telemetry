@@ -1,6 +1,6 @@
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=nodewatcher-core
+PKG_NAME:=nodewatcher
 PKG_VERSION:=0.3
 PKG_RELEASE:=1
 
@@ -10,8 +10,8 @@ define Package/nodewatcher-core
   SECTION:=utils
   CATEGORY:=Utilities
   SUBMENU:=Nodewatcher
-  DEPENDS:=+busybox +cronscripts
-  TITLE:=nodewatcher-core
+  DEPENDS:=+netprofscripts +nodeupgrade +nodewatcher-clients +nodewatcher-watchdog +olsrd-mod-actions
+  TITLE:=Nodewatcher Metapackage
 endef
 
 define Build/Prepare

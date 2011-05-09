@@ -9,8 +9,9 @@ include $(INCLUDE_DIR)/package.mk
 define Package/nodewatcher-clients
   SECTION:=utils
   CATEGORY:=Utilities
+  SUBMENU:=Nodewatcher
   DEPENDS:=+nodewatcher-core +nullhttpd +nodogsplash
-  TITLE:=nodewatcher-clients
+  TITLE:=Scripts to make the router interact with Nodewatcher.
 endef
 
 define Build/Prepare

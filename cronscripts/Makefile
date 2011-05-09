@@ -10,8 +10,7 @@ define Package/cronscripts
   SECTION:=base
   CATEGORY:=Base system
   DEPENDS:=+busybox
-  TITLE:=Cron scripts
-  URL:=
+  TITLE:=Cron scripts - Add crontabs in easily-maintained directories.
 endef
 
 define Build/Prepare
