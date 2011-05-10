@@ -1,12 +1,12 @@
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=nodewatcher
+PKG_NAME:=nodewatcher-all
 PKG_VERSION:=0.3
 PKG_RELEASE:=1
 
 include $(INCLUDE_DIR)/package.mk
 
-define Package/nodewatcher
+define Package/nodewatcher-all
   SECTION:=utils
   CATEGORY:=Utilities
   SUBMENU:=Nodewatcher
@@ -14,4 +14,4 @@ define Package/nodewatcher
   TITLE:=Nodewatcher Metapackage
 endef
 
-$(eval $(call BuildPackage,nodewatcher))
+$(eval $(call BuildPackage,nodewatcher-all))
