@@ -14,16 +14,4 @@ define Package/nodewatcher
   TITLE:=Nodewatcher Metapackage
 endef
 
-define Build/Prepare
-endef
-
-define Build/Configure
-endef
-
-define Build/Compile
-endef
-
-define Package/nodewatcher/install
-endef
-
 $(eval $(call BuildPackage,nodewatcher))
