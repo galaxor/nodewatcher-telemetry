@@ -9,7 +9,7 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=olsrd-mod-actions
-PKG_VERSION:=0.6.1
+PKG_VERSION:=0.6.2
 PKG_RELEASE:=1
 OLSRD_BUILD_DIR=$(BUILD_DIR)/olsrd-$(PKG_VERSION)
 
