@@ -1,0 +1,22 @@
+This is an OpenWRT feed that allows you to build the nodewatcher telemetry
+software on your OpenWRT node.
+
+This is part of the Nodewatcher project:
+  https://github.com/interop-dev/nodewatcher
+
+Nodewatcher is a management interface for wireless/community mesh networks.
+These telemetry packages allow mesh nodes to push data to the central database.
+
+To use this feed, get a copy of OpenWRT, from here:
+  https://openwrt.org/
+
+Then, edit your feeds.conf, and add this line:
+  src-git nodewatcher git://github.com/interop-dev/nodewatcher-telemetry.git
+
+Then, run ./scripts/feeds install -a
+
+Now, you can build OpenWRT, through the standard method, documented here:
+  http://wiki.openwrt.org/about/toolchain
+
+When you do "make menuconfig", you will be able to choose
+  Utilities -> Nodewatcher -> Nodewatcher
